@@ -39,6 +39,8 @@ describe('Home', () => {
       actions: {
         'auth:register': registerStub,
         'auth:socialAuth': socialAuthStub,
+        'auth:verifyUsername': () => async () => ({}),
+        'common:setTitle': () => {},
       },
     });
 
